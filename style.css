@@ -1,0 +1,28 @@
+/* Remove default styling and set box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+/* Styling rules */
+a {
+  text-decoration: none;
+}
+
+.top-banner-container, .footer {
+  background-color: #1f2937;
+}
+
+.header-footer-text {
+  color: white;
+}
+
+
+
+
+/* Parent Flexbox */
+body {
+  display: flex;
+  flex-flow: column;
+}
