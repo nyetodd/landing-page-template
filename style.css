@@ -3,26 +3,119 @@
   box-sizing: border-box;
   margin:0;
   padding: 0;
+  border: 1px solid orchid; 
 }
 
-/* Styling rules */
 a {
   text-decoration: none;
 }
+
+ul {
+  list-style: none;
+}
+
+/* top banner styling */
 
 .top-banner-container, .footer {
   background-color: #1f2937;
 }
 
 .header-footer-text {
-  color: white;
+  color: #e5e7eb;
+  font-size: 18px;
 }
 
+.top-banner-content{
+  padding: 5%;
+}
 
+#ice-cream-van-image {
+  width: 100%;
+  height: auto;
+} 
 
+.header-logo {
+  color: #f9faf8;;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-main-text {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.signup-button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  padding: 2%;
+  border-radius: 10px;
+  width: 30%;
+  align-self: flex-start;
+}
+
+.top-banner-left {
+  padding: 0% 2%;
+}
 
 /* Parent Flexbox */
 body {
   display: flex;
   flex-flow: column;
 }
+
+.top-banner-container {
+  flex-grow: 0;
+
+}
+
+/* Positioning for top header bar so that content displays on one line with 
+title on left and links on right side of bar */
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5%;
+}
+
+.header-links {
+  display: flex;
+  gap: 18px;
+}
+
+/* Positioning for top banner content - Text and signup should display on left 
+and image on right*/
+.top-banner-content {
+  display: flex;
+  justify-content: center;
+}
+/* left content and right content should each use half of parent space */
+.top-banner-left, .top-banner-right {
+  flex-basis: 50%; 
+}
+
+.top-banner-left {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1em;
+}
+
+/* Info section styling */
+.info-image {
+  width: auto;
+  height: 100px;
+  align-self: center;
+}
+
+
+/* Info section positioning */
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-container {
+  display: flex;
+}
+
+
