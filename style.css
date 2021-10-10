@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin:0;
   padding: 0;
-  border: 1px solid orchid; 
+  /* border: 1px solid orchid;  */
 }
 
 a {
@@ -20,7 +20,7 @@ ul {
   background-color: #1f2937;
 }
 
-.header-footer-text {
+.white-subtext {
   color: #e5e7eb;
   font-size: 18px;
 }
@@ -32,9 +32,10 @@ ul {
 #ice-cream-van-image {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 } 
 
-.header-logo {
+.white-subheading {
   color: #f9faf8;;
   font-size: 24px;
   font-weight: bold;
@@ -71,7 +72,7 @@ title on left and links on right side of bar */
 .header-bar {
   display: flex;
   justify-content: space-between;
-  padding: 0px 5%;
+  padding: 1% 5%;
 }
 
 .header-links {
@@ -99,8 +100,11 @@ and image on right*/
 /* Info section styling */
 .info-image {
   width: auto;
-  height: 100px;
+  height: 140px;
   align-self: center;
+  border: 2px solid #3882f6;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .info-title {
@@ -112,18 +116,22 @@ and image on right*/
 
 .subtext {
   color: #314258;
+  margin-top: 5%;
 }
 
 /* Info section positioning */
 .services-container {
   display: flex;
+  gap: 2%;
+  margin: 20px 0px;
+  padding: 5%;
 }
 
 .info-container {
   display: flex;
   flex-direction: column;
   align-self: center;
-  padding: 2% 10%;
+  padding: 5% 10%;
 }
 
 .item {
@@ -131,6 +139,7 @@ and image on right*/
   flex-flow: column wrap;
   /* this allows bar to resize - if want to be static set to width 200px */
   width: 100%;
+  margin: 5px;
 }
 
 /* Quote container */
@@ -140,7 +149,7 @@ and image on right*/
   flex-flow: column wrap;
   justify-content: center;
   background-color: #e5e7eb;
-  padding: 2% 10%;
+  padding: 5% 10%;
 }
 
 .quote-text {
@@ -158,6 +167,43 @@ and image on right*/
   text-align: right;
 }
 
+/* Call to action container */
+
+.call-to-action-container {
+  display: flex;
+  padding: 5% 10%;
+  justify-content: center;
+}
+
+.call-to-action-content {
+  background-color: #3882f6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2% 10%;
+}
+
+.call-to-action-text {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0% 5%;
+}
+
+.call-to-action-button {
+  align-self: center;
+  border: 1px solid #f9faf8;
+}
+
+/* Footer container */
+.footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 2% 10%;
+  font-size: 14px;
+  font-weight: lighter;
+}
 
 
 
