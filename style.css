@@ -211,14 +211,12 @@ and image on right*/
 /* Rules for small screens */
 @media only screen and (max-width:600px)  {
 
-
-
 .top-banner-container {
   flex-flow: column wrap;
-}  
+}
 
-.header-links {
-  flex-flow: column wrap;
+.top-banner-left, .top-banner-right {
+  flex-basis: 100%; 
 }
 
 .services-container {
@@ -228,10 +226,6 @@ and image on right*/
 
 /* Rules for med screens */
 @media only screen and (max-width: 900px) {
-
-  * {
-    border: 1px solid orange;
-  }
 
   .services-container{
     flex-wrap: wrap;
