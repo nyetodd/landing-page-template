@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin:0;
   padding: 0;
-  /* border: 1px solid orchid;  */
 }
 
 a {
@@ -63,7 +62,7 @@ ul {
 /* Parent Flexbox */
 body {
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
   font-family: "Sora", sans-serif;
 }
 
@@ -71,6 +70,7 @@ body {
 title on left and links on right side of bar */
 .header-bar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 1% 5%;
 }
@@ -84,6 +84,7 @@ title on left and links on right side of bar */
 and image on right*/
 .top-banner-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 /* left content and right content should each use half of parent space */
@@ -120,18 +121,19 @@ and image on right*/
 }
 
 /* Info section positioning */
-.services-container {
-  display: flex;
-  gap: 2%;
-  margin: 20px 0px;
-  padding: 5%;
-}
 
 .info-container {
   display: flex;
   flex-direction: column;
   align-self: center;
   padding: 5% 10%;
+}
+
+.services-container {
+  display: flex;
+  gap: 2%;
+  margin: 20px 0px;
+  padding: 5%;
 }
 
 .item {
@@ -205,5 +207,27 @@ and image on right*/
   font-weight: lighter;
 }
 
+/* Rules for small screens */
+@media only screen and (max-width:600px)  {
 
+.top-banner-container {
+  flex-flow: column wrap;
+}
+
+.top-banner-left, .top-banner-right {
+  flex-basis: 100%; 
+}
+
+.services-container {
+  flex-wrap: wrap;
+}
+}
+
+/* Rules for med screens */
+@media only screen and (max-width: 900px) {
+
+  .services-container{
+    flex-wrap: wrap;
+  }
+}
 
