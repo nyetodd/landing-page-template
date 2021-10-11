@@ -1,5 +1,24 @@
 # landing-page-template
-Example landing page
+This is a The Odin Project Foundations project to create a product landing page. I have created the landing page for the (fake) tour management company 'Ice Queen Touring Co.'. 
+
+## Skills used
+- Building page content with HTML
+- CSS styling
+- CSS layout with Flexbox
+- sourcing free images 
+- sizing images for consistent design look
+- crediting images
+- basic Git workflow
+
+## Ideas for future development
+- update page to display responsively on a range of devices (MEDIUM)
+- update color scheme and styling from those proposed by project mock-up (SMALL)
+- add additional styling such as border shadowing (SMALL)
+- update quotes section to display multiple 'customer testimonies' which can be scrolled through (MED)
+- add about us and rates pages (MED)
+- add book now page that allow booking request to be submitted and request is sent to email address (LARGE)
+- add calander to booking page that shows what dates available to be booked (LARGE)
+- update page so when you click on one of services icons you are taken to section with further detail (MED)
 
 ## Image Credits
 - Top Banner Image by <a href="https://www.freepik.com/vectors/food">Food vector created by freepik - www.freepik.com</a> 
